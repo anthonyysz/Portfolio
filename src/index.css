@@ -4,9 +4,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap');
 
+:root {
+    --bg-color: #081849;
+    --text-color: #F8F0C6;
+    --paragraph-color: #E5DFBE;
+    --accent-color: #C4A484;
+    --darker-color: #7a6249;
+    --shadow-color: 0 10px 15px -3px rgb(4 12 22 / 0.1), 0 4px 6px -4px rgb(4 12 22 / 0.1);
+}
+
+
 @layer base {
     body {
         @apply font-[Raleway];
+        background-color: var(--bg-color);
+        color: var(--text-color)
     }
     li {
         @apply px-4;
@@ -16,7 +28,7 @@
 
 .content-div {
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     background-position: center;
     height: 250px;
 }

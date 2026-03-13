@@ -10,7 +10,7 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#2C6D08] text-[#F8F0C6]'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#081849] text-[#F8F0C6]'>
         <div>
           <img src={logo} alt="Logo Image" style={{width: '80px'}}/>
         </div>
@@ -18,29 +18,19 @@ const Navbar = () => {
         
         <ul className='hidden md:flex'>
           <li>
-            <Link to="home" smooth={true} duration={500}>
+            <a href='/portfolio'>
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li>
-            <Link to="skills" smooth={true} duration={500}>
+            <a href='/skills'>
               Skills
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="work" smooth={true} duration={500}>
+            <a href='/work'>
               Work
-            </Link>
-          </li>
-          <li>
-            <Link to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
+            </a>
           </li>
         </ul>
 
@@ -54,33 +44,23 @@ const Navbar = () => {
           className={
             !nav 
               ? 'hidden' 
-              : 'absolute top-0 left-0 w-full h-screen bg-[#2C6D08] text-[#F8F0C6] flex flex-col justify-center items-center'
+              : 'absolute top-0 left-0 w-full h-screen bg-[#081849] text-[#F8F0C6] flex flex-col justify-center items-center'
           }
         >
           <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            <a href='/portfolio'>
               Home
-            </Link>
+            </a>
           </li>
           <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="about" smooth={true} duration={500}>
-              About
-            </Link>
-          </li>
-          <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            <a href='/skills'>
               Skills
-            </Link>
+            </a>
           </li>
           <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+            <a href='/work'>
               Work
-            </Link>
-          </li>
-          <li className='py-6 text-4xl'>
-            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-              Contact
-            </Link>
+            </a>
           </li>
         </ul>
 
