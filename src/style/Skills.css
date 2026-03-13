@@ -1,6 +1,6 @@
 /* Styling the title area of the page */
 
-.work-screen {
+.skills-screen {
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
@@ -12,13 +12,12 @@
     height: 100vh;
 }
 
-.work-titlebox {
+.skills-titlebox {
     padding-bottom: 32px;
     text-align: center;
-
 }
 
-.work-title {
+.skills-title {
     font-size: 36px;
     line-height: calc(2.5/2.25);
     display: inline;
@@ -26,68 +25,49 @@
     border-bottom-color: var(--accent-color);
     font-weight: bold;
 }
-.work-subtitle {
+.skills-subtitle {
     padding-top: 16px;
 }
 
 /* Creating the grid */
 
-.work-grid {
+.skills-grid {
+    width: 100%;
     display: grid;
     gap: 16px;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    justify-content: center;
 }
 
 @media (max-width: 767px) {
-    .work-grid {
+    .skills-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 640px;
     }
 }
 
 @media (min-width: 768px) {
-    .work-grid {
+    .skills-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 
-.work-grid-item {
+.skills-grid-item {
     background-color: var(--darker-color);
-    height: 220px;
     box-shadow: var(--shadow-color);
-    width: 100%;
-    border-radius: 6px;
-    display: grid;
-    justify-content: center;
-    align-items: center;
+    height: 124px;
+}
+
+.skills-image {
+    padding-bottom: 8px;
+    padding-top: 8px;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    grid-template-rows: 1fr 1fr
+    width: 80px;
 }
 
-.item-top {
-    font-size: 24px;
-    line-height: 32px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: .05em;
-}
-
-.item-bottom {
-    text-align: center;
-}
-
-.button {
-    text-align: center;
-    border-radius: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin: 8px;
-    background-color: white;
-    color: #374151;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: bold;
+.skills-image-label {
+    padding-top: 4px;
 }
