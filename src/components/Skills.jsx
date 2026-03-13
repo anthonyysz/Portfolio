@@ -1,11 +1,10 @@
-import React from 'react'
 import GitHub from '../assets/github.png'
 import Pandas from '../assets/pandas.png'
 import Python from '../assets/python.png'
 import ReactImage from '../assets/react.png'
 import SQL from '../assets/sql.png'
 import Tailwind from '../assets/tailwind.png'
-import '../style/skills.css'
+import '../style/Skills.css'
 
 const Skills = () => {
   return (
