@@ -1,7 +1,7 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import {Link} from 'react-scroll'
-import '../style/Home.css'
+import '../style/home.css'
 
 
 const Home = () => {

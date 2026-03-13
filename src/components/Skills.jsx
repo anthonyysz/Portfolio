@@ -5,7 +5,7 @@ import Python from '../assets/python.png'
 import ReactImage from '../assets/react.png'
 import SQL from '../assets/sql.png'
 import Tailwind from '../assets/tailwind.png'
-import '../style/Skills.css'
+import '../style/skills.css'
 
 const Skills = () => {
   return (
