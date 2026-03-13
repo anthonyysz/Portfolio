@@ -72,7 +72,3 @@
     border-color: var(--accent-color);
     translate: var();
 }
-
-.arrow {
-    padding-left: 8px;
-}
