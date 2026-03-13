@@ -19,7 +19,7 @@ const Home = () => {
                   <button className='view-work-button'>
                     View Work
                     <span className='arrow'>
-                      <HiArrowNarrowRight className='' />
+                      <HiArrowNarrowRight className='z-0'/>
                     </span>
                   </button>
                 </a>
