@@ -1,0 +1,80 @@
+.home-screen {
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.greeting-text {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--accent-color);
+}
+
+.name-text {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+    .name-text {
+        font-size: 72px;
+        line-height: 80px;
+    }
+}
+
+.position-text {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+@media (min-width: 640px) {
+    .position-text {
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+.bio-text {
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    max-width: 750px;
+}
+
+.view-work-button {
+    border-width: 2px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.view-work-button:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    translate: var();
+}
+
+.arrow {
+    padding-left: 4px;
+    padding-right: 4px;
+    transform: translateX(4px);
+}
