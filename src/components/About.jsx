@@ -1,28 +1,30 @@
 import React from 'react'
+import '../style/About.css'
 
 const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#081849] text-[#F8F0C6]'>
-        <div className='flex flex-col justify-center items-center w-full h-full'>
-            <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>
-                <div className='sm:text-right pb-8 pl-4'>
-                    <p className='text-4xl font-bold inline border-b-4 border-[#C4A484]'>
-                        About
-                    </p>
-                </div>
-                <div></div>
-                </div>
-                <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-                  <div className='sm:text-right text-4xl font-bold pl-4'>
-                    <p>Hey! Feel free to look around!</p>
-                  </div>
-                  <div className='pl-4 sm:text-left'>
-                    <p>I am a training Data Scientist, having graduated from Springboard's Data Science Career Track. 
-                      I am finishing up studies at Western Governors University, earning my Bachelor's Degree in Computer Science. I'd love to work in a position requiring my 
-                      knowledge in statistics, machine learning, software development.</p>
-                  </div>
-                </div>
+    <div name='about' className='about-screen'>
+      <div className='about-columns'>
+        <div className='about-grid-item-top'>
+          <div className='about-title-div'>
+            <p className='about-title'>
+              About
+            </p>
+          </div>
+          <div></div>
         </div>
+        <div className='about-grid-item-bottom'>
+          <div className='about-subtitle-div'>
+            <p>Hey! Feel free to look around!</p>
+          </div>
+          <div className='about-text-div'>
+            <p>I am a training Data Scientist, having graduated from Springboard's Data Science Career Track. 
+              I am finishing up studies at Western Governors University, earning my Bachelor's Degree in Computer Science. I'd love to work in a position requiring my 
+              knowledge in statistics, machine learning, software development.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
