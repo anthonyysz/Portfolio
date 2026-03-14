@@ -16,9 +16,9 @@ const Navbar = () => {
           <img src={logo} alt="Logo Image" style={{width: '80px'}}/>
         </div>       
         <ul className='navbar-buttons'>
-          <Link className='navbar-item' to="/">Home</Link>
-          <Link className='navbar-item' to="/skills">Skills</Link>
-          <Link className='navbar-item' to="/work">Work</Link>
+          <li><Link className='navbar-item' to="/">Home</Link></li>
+          <li><Link className='navbar-item' to="/skills">Skills</Link></li>
+          <li><Link className='navbar-item' to="/work">Work</Link></li>
         </ul>
 
         {/* Hamburger*/}
@@ -35,13 +35,13 @@ const Navbar = () => {
           }
         >
           <li className='mobile-menu-items'>
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={() => setNav(false)} >Home</Link>
           </li>
           <li className='mobile-menu-items'>
-            <Link to="/skills">Skills</Link>
+            <Link to="/skills" onClick={() => setNav(false)} >Skills</Link>
           </li>
           <li className='mobile-menu-items'>
-            <Link to="/work">Work</Link>
+            <Link to="/work" onClick={() => setNav(false)} >Work</Link>
           </li>
         </ul>
 
@@ -49,19 +49,13 @@ const Navbar = () => {
         <div className='social-icon-bar'>
           <ul>
             <li className='social-icon bg-blue-600'>
-              <a  className='social-icon-text' href="https://www.linkedin.com/in/anthony-szabo-a3976622b/">
-                LinkedIn <FaLinkedin size={30} />
-              </a>
+              <a  className='social-icon-text' href="https://www.linkedin.com/in/anthony-szabo-a3976622b/">LinkedIn <FaLinkedin size={30} /></a>
             </li>
             <li className='social-icon bg-[#333333]'>
-              <a  className='social-icon-text' href="https://github.com/anthonyysz">
-                GitHub <FaGithub size={30} />
-              </a>
+              <a  className='social-icon-text' href="https://github.com/anthonyysz">GitHub <FaGithub size={30} /></a>
             </li>
             <li className='social-icon bg-[#FD4866]'>
-              <a className='social-icon-text' href="mailto:anthony_szabo@hotmail.com">
-                Email <HiOutlineMail size={30} />
-              </a>
+              <a className='social-icon-text' href="mailto:anthony_szabo@hotmail.com">Email <HiOutlineMail size={30} /></a>
             </li>
             <li className='social-icon bg-[#565F69]'>
               <a  className='social-icon-text' href="https://resume.creddle.io/resume/98vmachii1e">
