@@ -1,6 +1,6 @@
 import React from 'react'
 import {HiArrowNarrowRight} from 'react-icons/hi'
-import {Link} from 'react-scroll'
+import { Link } from "react-router-dom";
 import '../style/Home.css'
 
 
@@ -15,14 +15,12 @@ const Home = () => {
             projects within that realm. Currently I am working to expand my knowledge of machine learning, especially in neural networks, 
             while finishing my Bachelor's degree in Computer Science from Western Governor's University.</p>
         <div>
-            <a href='/work'>
+            <Link to='/work'>
               <button className='view-work-button'>
                 View Work
-                <span className='button-arrow'>
-                  <HiArrowNarrowRight/>
-                </span>
+                <HiArrowNarrowRight className='ml-1'/>
               </button>
-            </a>
+            </Link>
         </div>
       </div>
     </div>

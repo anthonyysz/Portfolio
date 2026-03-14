@@ -35,19 +35,7 @@
 .work-grid {
     display: grid;
     gap: 16px;
-}
-
-@media (max-width: 767px) {
-    .work-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        max-width: 640px;
-    }
-}
-
-@media (min-width: 768px) {
-    .work-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .work-grid-item {
@@ -73,6 +61,8 @@
     letter-spacing: .05em;
 }
 
+/* The buttons inside of each box for code/demo */
+
 .item-bottom {
     text-align: center;
 }
@@ -90,4 +80,13 @@
     font-size: 18px;
     line-height: 28px;
     font-weight: bold;
+}
+
+/* Some styling for a smaller screen */
+
+@media (max-width: 768px) {
+    .work-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 640px;
+    }
 }

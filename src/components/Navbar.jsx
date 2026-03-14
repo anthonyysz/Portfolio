@@ -3,8 +3,8 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import logo from '../assets/logo.png';
-import {Link} from 'react-scroll'
 import '../style/Navbar.css'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false)
@@ -16,15 +16,9 @@ const Navbar = () => {
           <img src={logo} alt="Logo Image" style={{width: '80px'}}/>
         </div>       
         <ul className='navbar-buttons'>
-          <a className='navbar-item' href='/portfolio'>
-            Home
-          </a>
-          <a className='navbar-item' href='/skills'>
-            Skills
-          </a>
-          <a className='navbar-item' href='/work'>
-            Work
-          </a>
+          <Link className='navbar-item' to="/">Home</Link>
+          <Link className='navbar-item' to="/skills">Skills</Link>
+          <Link className='navbar-item' to="/work">Work</Link>
         </ul>
 
         {/* Hamburger*/}
@@ -41,19 +35,13 @@ const Navbar = () => {
           }
         >
           <li className='mobile-menu-items'>
-            <a href='/portfolio'>
-              Home
-            </a>
+            <Link to="/">Home</Link>
           </li>
           <li className='mobile-menu-items'>
-            <a href='/skills'>
-              Skills
-            </a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li className='mobile-menu-items'>
-            <a href='/work'>
-              Work
-            </a>
+            <Link to="/work">Work</Link>
           </li>
         </ul>
 
@@ -71,9 +59,9 @@ const Navbar = () => {
               </a>
             </li>
             <li className='social-icon bg-[#FD4866]'>
-              <Link to="contact" smooth={true} duration={500} className='social-icon-text'>
+              <a className='social-icon-text' href="mailto:anthony_szabo@hotmail.com">
                 Email <HiOutlineMail size={30} />
-              </Link>
+              </a>
             </li>
             <li className='social-icon bg-[#565F69]'>
               <a  className='social-icon-text' href="https://resume.creddle.io/resume/98vmachii1e">

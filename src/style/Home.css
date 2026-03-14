@@ -1,3 +1,5 @@
+/* Setting up the home screen the way I need it */
+
 .home-screen {
     width: 100%;
     height: 100vh;
@@ -15,6 +17,8 @@
     height: 100%;
 }
 
+/* Setting up the text */
+
 .greeting-text {
     font-size: 18px;
     line-height: 28px;
@@ -27,24 +31,12 @@
     font-weight: bold;
 }
 
-@media (min-width: 640px) {
-    .name-text {
-        font-size: 72px;
-        line-height: 80px;
-    }
-}
+
 
 .position-text {
     font-size: 24px;
     line-height: 32px;
     font-weight: bold;
-}
-
-@media (min-width: 640px) {
-    .position-text {
-        font-size: 36px;
-        line-height: 40px;
-    }
 }
 
 .bio-text {
@@ -54,6 +46,8 @@
     padding-bottom: 16px;
     max-width: 750px;
 }
+
+/* Setting up the View Work button */
 
 .view-work-button {
     border-width: 2px;
@@ -71,4 +65,17 @@
     background-color: var(--accent-color);
     border-color: var(--accent-color);
     translate: var();
+}
+
+/* Special cases for different sized screens */
+
+@media (min-width: 640px) {
+    .name-text {
+        font-size: 72px;
+        line-height: 80px;
+    }
+    .position-text {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }

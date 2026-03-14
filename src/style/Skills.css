@@ -39,20 +39,10 @@
     padding-top: 24px;
     padding-bottom: 24px;
     justify-content: center;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-@media (max-width: 767px) {
-    .skills-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        max-width: 640px;
-    }
-}
-
-@media (min-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
+/* Working on each box in the grid */
 
 .skills-grid-item {
     background-color: var(--darker-color);
@@ -70,4 +60,13 @@
 
 .skills-image-label {
     padding-top: 4px;
+}
+
+/* Some changes if the screen gets smaller */
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 640px;
+    }
 }

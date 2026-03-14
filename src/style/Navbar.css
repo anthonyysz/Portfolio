@@ -1,3 +1,5 @@
+/* Initial navbar things (top row of screen)*/
+
 .navbar {
     position: fixed;
     display: flex;
@@ -5,17 +7,20 @@
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    padding-right: 16px;
+    padding-right: 40px;
 }
 
 .navbar-buttons {
     display: none;
+    font-size: 20px;
 }
 
 .navbar-item {
     padding-right: 18px;
     padding-left: 18px;
 }
+
+/* Hamburger and skinny screen menu, likely for mobile phones */
 
 .hamburger {
     z-index: 10;
@@ -40,6 +45,8 @@
     font-size: 36px;
     line-height: 40px;
 }
+
+/* Left side social icon bar */
 
 .social-icon-bar {
     display: none;
@@ -69,6 +76,8 @@
     align-items: center;
     width: 100%;
 }
+
+/* Special cases for different sized screens */
 
 @media (min-width: 768px) {
     .navbar-buttons {
