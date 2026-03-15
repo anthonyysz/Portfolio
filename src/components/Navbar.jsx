@@ -3,6 +3,7 @@ import {FaBars, FaTimes, FaGithub, FaLinkedin} from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import logo from '../assets/logo.png';
+import resume from '../assets/resume.pdf'
 import '../style/Navbar.css'
 import { Link } from "react-router-dom";
 
@@ -58,7 +59,7 @@ const Navbar = () => {
               <a className='social-icon-text' href="mailto:anthony_szabo@hotmail.com">Email <HiOutlineMail size={30} /></a>
             </li>
             <li className='social-icon bg-[#565F69]'>
-              <a  className='social-icon-text' href="https://resume.creddle.io/resume/98vmachii1e">
+              <a  className='social-icon-text' href={resume} download="resume.pdf">
                 Resume <BsFillPersonLinesFill size={30} />
               </a>
             </li>
