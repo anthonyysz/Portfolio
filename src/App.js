@@ -8,11 +8,11 @@ import { Route, Routes } from "react-router-dom";
 
 function MainPage() {
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory">
+    <div className="h-screen overflow-y-scroll snap-y snap-proximity sm:snap-mandatory">
       <Navbar />
       <section className="h-screen snap-start"><Home /></section>
       <section className="h-screen snap-start"><About /></section>
-      <section className="h-screen snap-start"><Contact /></section>
+      <section className="h-screen sm:snap-start"><Contact /></section>
     </div>
   );
 }

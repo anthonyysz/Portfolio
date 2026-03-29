@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div>
-          <img src={logo} alt="Logo Image" style={{width: '80px'}}/>
+          <img src={logo} alt="Logo Image" className='logo'/>
         </div>       
         <ul className='navbar-buttons'>
           <li><Link className='navbar-item' to="/">Home</Link></li>

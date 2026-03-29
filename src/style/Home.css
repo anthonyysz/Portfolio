@@ -2,7 +2,8 @@
 
 .home-screen {
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Other pages have min-height: 100vh here, this page doesn't grow so it was not necessary */
+    padding-top: 80px;
 }
 
 .container {

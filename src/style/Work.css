@@ -5,11 +5,12 @@
     margin-right: auto;
     max-width: 1000px;
     padding: 16px;
+    padding-top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .work-titlebox {
@@ -49,6 +50,7 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 16px;
     text-align: center;
     grid-template-rows: 1fr 1fr
 }
@@ -88,5 +90,8 @@
     .work-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 640px;
+    }
+    .work-grid-item {
+        height: 180px;
     }
 }
