@@ -12,8 +12,7 @@ const Home = () => {
         <h1 className='name-text'>Anthony Szabo</h1>
         <h2 className='position-text'>I'm a Data Scientist</h2>
         <p className='bio-text'>I'm a data scientist with a deep and expansive knowledge of statistics and I love digging into 
-            projects within that realm. Currently I am working to expand my knowledge of machine learning, especially in neural networks, 
-            while finishing my Bachelor's degree in Computer Science from Western Governor's University.</p>
+            projects within that realm. Please take a look around.</p>
         <div>
             <Link to='/work'>
               <button className='view-work-button'>

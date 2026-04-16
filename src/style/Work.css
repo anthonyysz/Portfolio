@@ -67,6 +67,7 @@
 
 .item-bottom {
     text-align: center;
+    justify-content: center;
 }
 
 .button {
@@ -90,8 +91,21 @@
     .work-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         max-width: 640px;
+        justify-content: center;
+        align-items: center;
     }
     .work-grid-item {
         height: 180px;
+    }
+    .button {
+        display: flex;
+        font-size: 16px;
+        line-height: 22px;
+        
+    }
+    .item-bottom {
+    text-align: center;
+    display: flex;
+    justify-content: center;
     }
 }

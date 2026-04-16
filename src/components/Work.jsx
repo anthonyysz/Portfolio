@@ -14,7 +14,7 @@ const Work = () => {
                     Portfolio Website
                 </div>
                 <div className='item-bottom'>
-                    <a href="/">
+                    <a href="https://anthonyysz.github.io/portfolio/">
                         <button className='button'>Demo</button>
                     </a>
                     <a href="https://github.com/anthonyysz/portfolio">
@@ -27,7 +27,7 @@ const Work = () => {
                     Time Series Analysis
                 </div>
                 <div className='item-bottom'>
-                    <a href="https://github.com/anthonyysz/CapstoneThree">
+                    <a href="https://github.com/anthonyysz/GDP-Time-Series-Analysis">
                         <button className='button'>Code</button>
                     </a>
                 </div>
@@ -37,7 +37,7 @@ const Work = () => {
                     Fruit Image Recognition
                 </div>
                 <div className='item-bottom'>
-                    <a href="https://github.com/anthonyysz/fruit_image_recognition">
+                    <a href="https://github.com/anthonyysz/Fruit-Image-Recognition">
                         <button className='button'>Code</button>
                     </a>
                 </div>
@@ -47,7 +47,7 @@ const Work = () => {
                     Restaurant Reviews NLP
                 </div>
                 <div className='item-bottom'>
-                    <a href="https://github.com/anthonyysz/restaurant_reviews_nlp">
+                    <a href="https://github.com/anthonyysz/Restaurant-Reviews-NLP">
                         <button className='button'>Code</button>
                     </a>
                 </div>
