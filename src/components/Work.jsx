@@ -24,6 +24,19 @@ const Work = () => {
             </div>
             <div className='work-grid-item hover:scale-105 duration-200'>
                 <div className='item-top'>
+                    Fight Result Predictor
+                </div>
+                <div className='item-bottom'>
+                    <a href="https://www.fightresultpredictor.xyz/">
+                        <button className='button'>Demo</button>
+                    </a>
+                    <a href="https://github.com/anthonyysz/Fight-Result-Predictor">
+                        <button className='button'>Code</button>
+                    </a>
+                </div>
+            </div>
+            <div className='work-grid-item hover:scale-105 duration-200'>
+                <div className='item-top'>
                     Time Series Analysis
                 </div>
                 <div className='item-bottom'>
